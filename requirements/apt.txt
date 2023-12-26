@@ -1,0 +1,9 @@
+gcc
+python3-dev
+libkrb5-dev
+build-essential
+cmake
+ninja-build
+g++
+wget
+unzip
