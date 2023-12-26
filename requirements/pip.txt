@@ -10,6 +10,7 @@ xgboost
 numpy
 scipy
 matplotlib
+scikit-learn
 seaborn
 plotly
 sparkmagic
