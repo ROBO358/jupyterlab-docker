@@ -15,4 +15,4 @@ RUN apt install -y $(cat apt.txt | tr '\n' ' ') && apt clean && rm -rf /var/lib/
 RUN python -m pip install --no-cache-dir jupyterlab
 RUN python -m pip install --no-cache-dir -r pip.txt && pip cache purge
 
-ENTRYPOINT [ "jupyterlab", "--ip", "0.0.0.0", "--allow-root", "-b", "localhost", "--NotebookApp.token=''", "--no-browser" ]
+ENTRYPOINT [ "jupyter-lab", "--ip", "0.0.0.0", "--allow-root", "-b", "localhost", "--NotebookApp.token=''", "--no-browser" ]
